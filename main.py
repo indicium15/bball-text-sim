@@ -38,6 +38,18 @@ def CreateRoster(): #TODO: Function to create roster comparing the team_id value
             roster.append(i)
             #print("{} has been added to the roster of {}".format(i.player_name,TeamsList[0].team_name))
 
+def SimulateMatch(hometeam, awayteam):
+    print("""
+    Welcome to the New Orleans Pelicans Arena!
+    Our game tonight sees the {} matched up against the {}.
+    Let's review the starting lineups for our two teams.
+    """.format(hometeam.team_name,awayteam.team_name))
+    print('#'*80)
+    print("The Starting Lineup for the {}:".format(hometeam.team_name))
+    hometeam.printlineup()
+    print("The Starting Lineup for the {}:".format(awayteam.team_name))
+    awayteam.printlineup()
+    
 if __name__ == "__main__":
     PlayersList = []
     TeamsList = []
@@ -46,4 +58,6 @@ if __name__ == "__main__":
     CreateRoster()
     Team0 = TeamsList[0]
     Team0.PrintRoster(0)
+    
+    SimulateMatch(Team0, Team0)
     pass

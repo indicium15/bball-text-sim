@@ -20,11 +20,15 @@ class Team:
         table.add_row("Record","TO ADD") #TODO - Add team records
         console.print(table)
     
+    def ConstructLineup(self):
+        pass
+    
     def PrintRoster(self, argument): #TODO: This function
         if argument == 0: #Print Entire Roster
             for i in self.roster:
                 print (i.player_name)
         elif argument == 1: #Print Starting Lineup
+            
             pass
         elif argument == 2: #Print Bench
             pass
