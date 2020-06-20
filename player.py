@@ -48,9 +48,18 @@ def ImportPlayersFromFile(file_name): #Function to import player attributes from
             #print(type(player_reference))
             PlayersList.append(player_reference)
             print("Player {} has been added to the Global Player list with reference {}".format(p['player_name'],player_reference))
+    
+    for i in range(len(PlayersList)): #TODO:Automatically Assign Each Player in the list with a variable corresponding to their player id
+        PlayersList[i] = "Player" + str(i)
+        
 
-ImportPlayersFromFile('players.json')
-
+if __name__ == "__main__":
+    ImportPlayersFromFile('players.json')
+    Player0.PrintAttributes()
+    Player1.PrintAttributes()
+    
+   
+    pass
 
 
 

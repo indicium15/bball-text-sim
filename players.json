@@ -1,6 +1,6 @@
 { "players": [
     {
-        "player_id":"Player1",
+        "player_id":"Player0",
         "team_id":"1",
         "player_name":"Lonzo Ball",
         "player_height":"14",
@@ -12,7 +12,7 @@
         "player_3pt":"13"
     },
     {
-        "player_id":"Player2",
+        "player_id":"Player1",
         "team_id":"1",
         "player_name":"Josh Hart",
         "player_height":"14",
