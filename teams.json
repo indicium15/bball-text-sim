@@ -1,0 +1,12 @@
+{
+    "teams":[
+        {
+            "team_id":"0",
+            "team_name":"New Orleans Pelicans"
+        },
+        {
+            "team_id":"1",
+            "team_name":"Chicago Bulls"
+        }
+    ]
+}

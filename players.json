@@ -1,7 +1,7 @@
 { "players": [
     {
         "player_id":"Player0",
-        "team_id":"1",
+        "team_id":"0",
         "player_name":"Lonzo Ball",
         "player_height":"14",
         "player_strength":"14", 
@@ -13,8 +13,44 @@
     },
     {
         "player_id":"Player1",
-        "team_id":"1",
+        "team_id":"0",
         "player_name":"Josh Hart",
+        "player_height":"14",
+        "player_strength":"14", 
+        "player_speed":"15",
+        "player_jumping":"13",
+        "player_endurance":"10", 
+        "player_2pt":"8",
+        "player_3pt":"13"
+    },
+    {
+        "player_id":"Player2",
+        "team_id":"0",
+        "player_name":"Jrue Holiday",
+        "player_height":"14",
+        "player_strength":"14", 
+        "player_speed":"15",
+        "player_jumping":"13",
+        "player_endurance":"10", 
+        "player_2pt":"8",
+        "player_3pt":"13"
+    },
+    {
+        "player_id":"Player3",
+        "team_id":"0",
+        "player_name":"Brandon Ingram",
+        "player_height":"14",
+        "player_strength":"14", 
+        "player_speed":"15",
+        "player_jumping":"13",
+        "player_endurance":"10", 
+        "player_2pt":"8",
+        "player_3pt":"13"
+    },
+    {
+        "player_id":"Player0",
+        "team_id":"0",
+        "player_name":"Zion Williamson",
         "player_height":"14",
         "player_strength":"14", 
         "player_speed":"15",
