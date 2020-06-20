@@ -2,7 +2,7 @@ import json
 from rich.console import Console
 from rich.table import Column, Table
 player_id = ""
-Players = []
+PlayersList = []
 class Player:
     def __init__(self,player_id, team_id, player_name, player_height, player_strength, player_speed,
     player_jumping,player_endurance, player_2pt, player_3pt): #Simple way to define a player
@@ -37,20 +37,20 @@ class Player:
         
         console.print(table)
     
-def PlayersFromFile(file_name):
+def ImportPlayersFromFile(file_name): #Function to import player attributes from a json file. Still having some problems with this
     global player_id
     with open(file_name) as json_file:
         data = json.load(json_file)
         for p in data['players']:
-            Players = []
             player_reference = p['player_id']
             player_reference = Player(p['player_id'],p['team_id'],p['player_name'],p['player_height'],
             p['player_strength'],p['player_speed'],p['player_jumping'],p['player_endurance'],p['player_2pt'],p['player_3pt'])
-            Players.append(player_reference)
-            #player_id.PrintAttributes()
-    pass
+            #print(type(player_reference))
+            PlayersList.append(player_reference)
+            print("Player {} has been added to the Global Player list with reference {}".format(p['player_name'],player_reference))
 
-PlayersFromFile('players.json')
+ImportPlayersFromFile('players.json')
+
 
 
 
