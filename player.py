@@ -3,7 +3,7 @@ from rich.console import Console
 from rich.table import Column, Table
 
 class Player:
-    def __init__(self,player_id, team_id, player_name, player_height, player_strength, player_speed,
+    def __init__(self,player_id, team_id, player_name, player_position, player_height, player_strength, player_speed,
     player_jumping,player_endurance, player_2pt, player_3pt): #Simple way to define a player
         self.player_name = player_name
         self.player_id = player_id
@@ -15,9 +15,14 @@ class Player:
         self.player_endurance = player_endurance
         self.player_2pt = player_2pt
         self.player_3pt = player_3pt
+        self.player_position = player_position
+        self.player_overall = 0
         
     #Using rich module to print out nice tables
-    def PrintAttributes(self): 
+    def calculate_overall(self): #Function to calculate the overall of a player based on their position
+        pass
+    
+    def print_attributes(self): 
         print("Player Overview for {}:".format(self.player_name))
         console = Console()
         table = Table(show_header=False)
