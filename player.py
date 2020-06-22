@@ -1,3 +1,4 @@
+import statistics
 import json
 from rich.console import Console
 from rich.table import Column, Table
@@ -17,11 +18,9 @@ class Player:
         self.player_3pt = player_3pt
         self.player_position = player_position
         self.player_overall = 0
+        self.player_attributes = [player_2pt,player_3pt,player_endurance,player_height,player_jumping,player_speed,player_strength]
         
     #Using rich module to print out nice tables
-    def calculate_overall(self): #Function to calculate the overall of a player based on their position
-        pass
-    
     def print_attributes(self): 
         print("Player Overview for {}:".format(self.player_name))
         console = Console()
@@ -40,5 +39,6 @@ class Player:
         
         console.print(table)
     
-
-       
+    def calculate_overall(self): #Function to calculate the overall of a player based on their position
+        self.player_overall = statistics.mean(self.player_attributes)
+        print(f"Debugging: {self.player_name} has been assigned overall of {self.player_overall}")
